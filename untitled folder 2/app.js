@@ -28,7 +28,7 @@ function buildCharts(sample) {
     }];
 
     let layout = {
-        title:
+        title: "Belly button chart"
  
 
     
