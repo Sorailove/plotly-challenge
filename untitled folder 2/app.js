@@ -14,9 +14,21 @@ function buildMetadata(sample) {
 
 function buildCharts(sample) {
 
-    @app.route("/")
-def index():
-    return render_template('index.html')
+   console.log(data);
+    let labels = data.otu_ids.slice(0,10);
+    let values = data.sample_values.slice(0,10);
+    let hovertext = data.otu_labels.slice(0,10);
+
+    let trace = [{
+      values : values,
+      labels : labels,
+      type : "pie",
+      textposition: "inside",
+      hovertext : hovertext
+    }];
+
+    let layout = {
+        title:
  
 
     
